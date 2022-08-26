@@ -1,0 +1,13 @@
+cc_test(
+    name = "test",
+    srcs = [
+        "bar.cpp",
+        "foo.cpp",
+        "main.cpp",
+    ],
+    deps = [
+        "@boost//:algorithm",
+        "@boost//:any",
+        "@boost//:spirit",
+    ],
+)
